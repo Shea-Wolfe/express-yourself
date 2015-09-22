@@ -10,3 +10,15 @@ def hex(string):
 
 def word(string):
     return re.match(r'\w*-*[A-Za-z]+$',string)
+
+def words(string, count=None):
+    ret = re.split(' ', string)
+    if count:
+        if count != len(ret):
+            return False
+        else:
+            pass
+    if None in [word(s) for s in ret]:
+        return False
+    else:
+        return True
