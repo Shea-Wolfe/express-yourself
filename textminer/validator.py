@@ -7,3 +7,6 @@ def binary_even(string):
 
 def hex(string):
     return re.match(r'[0-9A-F]+$',string)
+
+def word(string):
+    return re.match(r'\w*-*[A-Za-z]+$',string)
