@@ -22,3 +22,6 @@ def words(string, count=None):
         return False
     else:
         return True
+
+def phone_number(string):
+    return re.match(r'.*\d{3}\W*\d{3}\W*\d{4}$',string)
