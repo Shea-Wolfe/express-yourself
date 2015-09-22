@@ -28,3 +28,6 @@ def phone_number(string):
 
 def money(string):
     return re.match(r'\$[0-9]{1,3}(\,[0-9]{3}|[0-9]{0,3})*(\.[0-9]{2})?$', string)
+
+def zipcode(string):
+    return re.match(r'\d{5}(\-\d{4})?$', string)
