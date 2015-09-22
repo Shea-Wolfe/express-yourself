@@ -27,4 +27,4 @@ def phone_number(string):
     return re.match(r'.*\d{3}\W*\d{3}\W*\d{4}$',string)
 
 def money(string):
-    return re.match(r'\$[0-9]{0,3}(\,[0-9]{0,3}|[0-9]{0,3})*(\.[0-9]{2})?$', string)
+    return re.match(r'\$[0-9]{1,3}(\,[0-9]{3}|[0-9]{0,3})*(\.[0-9]{2})?$', string)
