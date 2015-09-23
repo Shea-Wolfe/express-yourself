@@ -49,3 +49,9 @@ def date(string):
         dates['month'] = int(ret[0])
         dates['day'] = int(ret[1])
     return dates
+
+def email(string):
+    if not v.email(string):
+        return None
+    ret = re.split('@',string)
+    return {'local':ret[0],'domain':ret[1]}
