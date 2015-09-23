@@ -42,3 +42,6 @@ def hdate(string):
 
 def email(string):
     return re.match(r'\S+@[a-z]+\.[a-z]{2,3}$', string)
+
+def address(string):
+    return re.match(r'\d+ ([A-Z][a-z]*[.,]?\s|\d*\s)+[A-Z]{2} \d{5}(\-\d{4})?$',string)
